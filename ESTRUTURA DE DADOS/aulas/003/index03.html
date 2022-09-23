@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brincando com funções</title>
+</head>
+<body>
+    <h1>Brincando com numeros</h1>
+    <button onclick="caucular()">
+         Clique aqui
+</button>
+<section id="res">
+    <p>Aqui acontece a magica</p>
+</section>
+    <script>
+        function caucular(){
+            let n1 = Number(window.prompt('dite um numero: '));
+            let res = document.querySelector('section#res');
+
+            res.innerHTML = `<p>O dorbro de ${n1} é ${n1*2} e a metade é ${n1/2}!</p>`
+        }
+    </script>
+</body>
+</html>

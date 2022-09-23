@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aula de Estrutura de Dados 3</title>
+</head>
+<body>
+    <h1>É par ou impar?</h1>
+
+    <button onclick="teste()">Clique aqui</button>
+
+    <section id = "result">
+        <p>É aqui onde ocorre a mágica!</p>
+    </section>
+    <script>
+        function teste(){
+            let num = Number(window.prompt('Digite um número: '));
+            let tipo;
+
+            if (num % 2 == 0){
+                tipo = 'PAR'
+            }else{
+                tipo = 'IMPAR'
+            }
+
+            let res = document.querySelector('section#result')
+            res.innerHTML = `<p>O numero ${num} é ${tipo}</p>`
+        }
+    </script>
+
+</body>
+</html>

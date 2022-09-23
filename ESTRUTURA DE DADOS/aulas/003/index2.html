@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função</title>
+</head>
+<body>
+    <script>
+        var numero = 'global';
+        grif = 'global';
+        function talisnoir(){
+            let par = 'local';
+            return par;
+        }
+        function impar(){
+            par = 'local';
+            return par;
+        }
+        console.log(numero);
+        console.log(talisnoir());
+        console.log(grif);
+        console.log(impar());
+    </script>
+</body>
+</html>
